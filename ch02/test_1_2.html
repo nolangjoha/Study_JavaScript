@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var quarterOne = 1200;
+        var quarterTwo = 1300;
+        var quarterThree = 1000;
+        var quarterFour = prompt("4분기 판매량을 입력하세요", "0");
+
+        var total = quarterOne + quarterTwo + quarterThree;
+        var average = total / 3;
+
+        var result = quarterFour >= average ? "판매량이 평균 이상입니다." : "판매량이 평균 미달입니다.";
+       
+        
+        document.write(result);
+
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
