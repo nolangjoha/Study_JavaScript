@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function TestScore(name, kor, eng) {
+            this.userName = name;
+            this.korNum = kor;
+            this.engNum = eng;
+        }    
+        
+        TestScore.prototype.getTestInfo = function() {
+            document.write("이름: " + this.userName, "<br>");
+            document.write("국어: " + this.korNum, "<br>");
+            document.write("영어: " + this.engNum, "<br>");
+        }
+
+        TestScore.prototype.getAvg = function() {
+            return (this.korNum+this.engNum)/2;
+        }
+    
+
+
+        var kim = new TestScore("김군", 80, 90);
+        var oh = new TestScore("오군", 100, 80);
+        console.log(kim);
+        console.log(oh);
+
+        kim.getTestInfo();
+        document.write("평균점수: "+ kim.getAvg(), "<br><br>");
+
+        oh.getTestInfo();
+        document.write("평균점수: "+ oh.getAvg(), "<br><br>");
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
